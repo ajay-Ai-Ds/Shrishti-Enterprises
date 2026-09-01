@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-inter), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Global focus ring — keyboard accessibility ── */
+  :focus-visible {
+    outline: 3px solid #16a34a;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  /* Remove outline for mouse users only */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* ── Skip to content link ── */
+  .skip-to-content {
+    position: absolute;
+    top: -100px;
+    left: 16px;
+    z-index: 9999;
+    background: #16a34a;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 0 0 10px 10px;
+    text-decoration: none;
+    transition: top 0.2s;
+  }
+  .skip-to-content:focus {
+    top: 0;
+    outline: 3px solid #fff;
+    outline-offset: 2px;
+  }
+
+  /* Remove default details marker */
+  details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  /* ── Respect reduced motion ── */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
