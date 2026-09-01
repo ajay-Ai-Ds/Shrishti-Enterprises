@@ -13,6 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/gallery", priority: 0.7, changeFrequency: "weekly" as const },
     { path: "/blog", priority: 0.7, changeFrequency: "weekly" as const },
     { path: "/privacy-policy", priority: 0.5, changeFrequency: "monthly" as const },
+    { path: "/terms-and-conditions", priority: 0.5, changeFrequency: "monthly" as const },
+    { path: "/disclaimer", priority: 0.5, changeFrequency: "monthly" as const },
   ];
 
   // Blog posts

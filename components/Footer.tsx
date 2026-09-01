@@ -100,6 +100,8 @@ export default function Footer() {
               { href: "/contact", label: "Contact" },
               { href: "/blog", label: "Blog" },
               { href: "/privacy-policy", label: "Privacy Policy" },
+              { href: "/terms-and-conditions", label: "Terms & Conditions" },
+              { href: "/disclaimer", label: "Disclaimer" },
             ].map((l) => (
               <li key={l.href}>
                 <Link href={l.href} className="text-gray-400 hover:text-green-400 text-sm transition-colors">{l.label}</Link>
@@ -117,9 +119,17 @@ export default function Footer() {
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
           <p>© {year} {BUSINESS.name}. All rights reserved.</p>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-4">
             <Link href="/privacy-policy" className="hover:text-gray-300 transition-colors underline-offset-4 hover:underline">
               Privacy Policy
+            </Link>
+            <span className="text-gray-700">•</span>
+            <Link href="/terms-and-conditions" className="hover:text-gray-300 transition-colors underline-offset-4 hover:underline">
+              Terms &amp; Conditions
+            </Link>
+            <span className="text-gray-700">•</span>
+            <Link href="/disclaimer" className="hover:text-gray-300 transition-colors underline-offset-4 hover:underline">
+              Disclaimer
             </Link>
             <span className="text-gray-700">•</span>
             <p>Serving all areas of Bangalore, Karnataka, India</p>
