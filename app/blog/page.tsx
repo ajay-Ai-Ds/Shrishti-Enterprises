@@ -6,20 +6,68 @@ import Link from "next/link";
 import CTABanner from "@/components/CTABanner";
 
 export const metadata = buildMetadata({
-  title: "Blog — Safety Net Tips & Guides for Bangalore Homes",
-  description: "Expert guides on safety nets, invisible grills, bird nets, and home safety for Bangalore apartments. Read tips from Shrishti Enterprises experts.",
+  title: "High-Rise Safety & Invisible Grill Insights | Shrishti Enterprises",
+  description:
+    "Authoritative safety guides, cost breakdowns, and technical advice on balcony safety netting and SS316 invisible grills for Bangalore homeowners.",
   path: "/blog",
-  keywords: ["safety net blog bangalore", "invisible grills guide", "safety net tips"],
+  keywords: [
+    "balcony safety guide bangalore",
+    "invisible grills vs iron grilles",
+    "pigeon net installation guide",
+    "safety net pricing bangalore",
+  ],
 });
 
 const POSTS = [
-  { slug: "best-safety-nets-bangalore", title: "Best Safety Nets in Bangalore 2024 — Complete Guide", date: "2024-11-01", desc: "A comprehensive guide to the best safety net types, brands, and installation options available in Bangalore for apartments and villas.", readTime: "8 min" },
-  { slug: "invisible-grills-vs-traditional", title: "Invisible Grills vs Traditional Iron Grills — Which Is Better?", date: "2024-10-15", desc: "An honest comparison of invisible grills and traditional iron grills for Bangalore homes — covering cost, safety, aesthetics, and maintenance.", readTime: "6 min" },
-  { slug: "balcony-safety-nets-price", title: "Balcony Safety Nets Price in Bangalore 2024", date: "2024-09-20", desc: "Everything you need to know about balcony safety net prices in Bangalore — material types, price ranges, and what to watch out for.", readTime: "5 min" },
-  { slug: "benefits-of-invisible-grills", title: "7 Key Benefits of Invisible Grills for Bangalore Apartments", date: "2024-08-10", desc: "Discover why thousands of Bangalore homeowners are switching from traditional grills to invisible stainless steel cable grills.", readTime: "5 min" },
-  { slug: "protect-children-safety-nets", title: "How to Protect Children with Safety Nets at Home", date: "2024-07-05", desc: "Expert tips on using safety nets, invisible grills, and other measures to protect young children in Bangalore apartments.", readTime: "7 min" },
-  { slug: "bird-net-installation-guide", title: "Bird Net Installation Guide — What You Need to Know", date: "2024-06-18", desc: "A step-by-step guide to bird net installation in Bangalore — types, mesh sizes, costs, and maintenance.", readTime: "6 min" },
-  { slug: "cloth-hangers-installation-guide", title: "Ceiling Cloth Hanger Installation Guide for Bangalore Balconies", date: "2024-05-22", desc: "Everything about ceiling cloth hangers — types, installation process, costs, and maintenance for Bangalore apartments.", readTime: "4 min" },
+  {
+    slug: "best-safety-nets-bangalore",
+    title: "The Ultimate Guide to Selecting Balcony Safety Nets in Bangalore",
+    date: "2025-01-10",
+    desc: "A thorough examination of polymer twines, mesh tensile ratings, and professional fitment benchmarks for high-rise apartments.",
+    readTime: "7 min",
+  },
+  {
+    slug: "invisible-grills-vs-traditional",
+    title: "SS316 Invisible Grills vs. Traditional Iron Bars: Modern Safety Comparison",
+    date: "2025-01-22",
+    desc: "Compare aesthetics, structural load resistance, emergency exit safety, and lifecycle maintenance for Bangalore residences.",
+    readTime: "6 min",
+  },
+  {
+    slug: "balcony-safety-nets-price",
+    title: "2025 Balcony Safety Net Cost & Estimation Guide in Bangalore",
+    date: "2025-02-05",
+    desc: "Detailed per-square-foot pricing analysis across standard nylon, UV-treated copolymer, and heavy-gauge HDPE meshes.",
+    readTime: "5 min",
+  },
+  {
+    slug: "benefits-of-invisible-grills",
+    title: "Top 7 Reasons Bangalore High-Rise Owners Are Choosing Invisible Grills",
+    date: "2025-02-14",
+    desc: "How marine-grade stainless steel cables combine panoramic balcony vistas with certified 350+ kg fall protection.",
+    readTime: "5 min",
+  },
+  {
+    slug: "protect-children-safety-nets",
+    title: "High-Rise Child Safety: Essential Balcony & Stairwell Precautions",
+    date: "2025-02-28",
+    desc: "Proven preventive strategies and installation guidelines to ensure childproof living spaces in multi-storey apartments.",
+    readTime: "6 min",
+  },
+  {
+    slug: "bird-net-installation-guide",
+    title: "Humane Pigeon & Bird Control for Bangalore Apartment Balconies",
+    date: "2025-03-02",
+    desc: "Effective aperture sizing, weatherproofing techniques, and perimeter sealing tips to eliminate bird infestation.",
+    readTime: "5 min",
+  },
+  {
+    slug: "cloth-hangers-installation-guide",
+    title: "Maximizing Compact Balcony Utility with Ceiling Drying Systems",
+    date: "2025-03-05",
+    desc: "A complete walkthrough of dual-pulley stainless steel drying racks, load distribution, and effortless operation.",
+    readTime: "4 min",
+  },
 ];
 
 export default function BlogIndexPage() {
@@ -27,43 +75,70 @@ export default function BlogIndexPage() {
     { name: "Home", url: BUSINESS.url },
     { name: "Blog", url: `${BUSINESS.url}/blog` },
   ]);
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <Breadcrumb items={[{ name: "Blog", href: "/blog" }]} />
-      <section className="py-16 bg-gradient-to-br from-green-700 to-green-900 text-white text-center">
+
+      <section className="py-16 bg-gradient-to-br from-green-800 via-green-700 to-green-900 text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Safety Net Tips &amp; Guides</h1>
-          <p className="text-xl text-green-100">Expert advice from Bangalore's most trusted safety net company.</p>
+          <span className="inline-block bg-white/20 text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3 backdrop-blur-xs">
+            Knowledge Base &amp; Technical Insights
+          </span>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
+            Safety Net &amp; Architectural Grill Guides
+          </h1>
+          <p className="text-lg md:text-xl text-green-100 max-w-2xl mx-auto font-normal">
+            Practical insights and home safety engineering advice from Shrishti Enterprises technical team.
+          </p>
         </div>
       </section>
+
       <section className="py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {POSTS.map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`} className="group block bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden">
-                {/* Blog image placeholder */}
-                <div className="aspect-[16/9] bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center border-b border-dashed border-green-200">
-                  <div className="text-center p-4">
-                    <svg className="w-8 h-8 text-green-400/50 mx-auto mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3 21h18M3.75 3h16.5M4.5 3v18M19.5 3v18" /></svg>
-                    <p className="text-green-600/50 text-[10px]">/images/blog/{post.slug}.jpg</p>
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="group block bg-white rounded-2xl border border-gray-200/90 shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+              >
+                <div className="aspect-[16/9] bg-gradient-to-br from-green-50 to-emerald-100 flex items-center justify-center border-b border-gray-100 p-6 text-center">
+                  <div>
+                    <span className="inline-block bg-white/80 text-green-800 text-xs font-bold px-3 py-1 rounded-full shadow-xs mb-2">
+                      Technical Article
+                    </span>
+                    <p className="text-gray-700 font-semibold text-xs">{post.title}</p>
                   </div>
                 </div>
-                <div className="p-5">
-                  <div className="flex items-center gap-3 mb-3 text-xs text-gray-400">
-                    <span>{new Date(post.date).toLocaleDateString("en-IN", { year: "numeric", month: "short", day: "numeric" })}</span>
-                    <span>·</span>
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3 text-xs text-gray-500 font-medium">
+                    <span>
+                      {new Date(post.date).toLocaleDateString("en-IN", {
+                        year: "numeric",
+                        month: "short",
+                        day: "numeric",
+                      })}
+                    </span>
+                    <span>•</span>
                     <span>{post.readTime} read</span>
                   </div>
-                  <h2 className="font-bold text-gray-900 text-base leading-snug mb-2 group-hover:text-green-700 transition-colors">{post.title}</h2>
-                  <p className="text-gray-500 text-sm leading-relaxed">{post.desc}</p>
+                  <h2 className="font-bold text-gray-900 text-base leading-snug mb-2 group-hover:text-green-700 transition-colors">
+                    {post.title}
+                  </h2>
+                  <p className="text-gray-600 text-sm leading-relaxed">{post.desc}</p>
                 </div>
               </Link>
             ))}
           </div>
         </div>
       </section>
-      <CTABanner title="Have a Safety Net Question?" subtitle="Call us — our experts are happy to advise you for free." />
+
+      <CTABanner
+        title="Looking for Tailored Safety Recommendations?"
+        subtitle="Speak directly with our technical consultants for free guidance on your apartment balcony layout."
+      />
     </>
   );
 }

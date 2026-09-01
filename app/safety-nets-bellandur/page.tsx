@@ -1,12 +1,33 @@
 import { buildMetadata } from "@/lib/metadata";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
-export const metadata = buildMetadata({ title: "Safety Nets in Bellandur Bangalore", description: "Safety net installation in Bellandur, Bangalore. Balcony nets, bird nets, invisible grills near Bellandur Lake. Call +91 80880 47056.", path: "/safety-nets-bellandur", keywords: ["safety nets bellandur", "bird nets bellandur bangalore", "balcony nets bellandur"] });
+
+export const metadata = buildMetadata({
+  title: "Safety Nets & Bird Nets in Bellandur Bangalore | Shrishti",
+  description: "Effective bird exclusion netting and high-tensile balcony safety nets for high-rises along Bellandur Lake & ORR corridor. Free quote.",
+  path: "/safety-nets-bellandur",
+  keywords: ["safety nets bellandur", "bird nets bellandur bangalore", "pigeon safety nets orr"],
+});
+
 const faqs = [
-  { question: "Do you install safety nets in Bellandur?", answer: "Yes. We serve all of Bellandur including Bellandur Gate, Kadubeesanahalli, Outer Ring Road, and Sarjapur Road junction areas." },
-  { question: "Why are bird nets especially needed in Bellandur?", answer: "Bellandur's proximity to Bellandur Lake attracts large numbers of birds including egrets, herons, and pigeons. Bird nets and pigeon nets are particularly popular in Bellandur apartments." },
-  { question: "How quickly can you install safety nets in Bellandur?", answer: "Same-day installation is available in Bellandur. Call us before noon for same-day service." },
-  { question: "Do you serve IT corridor apartments in Bellandur?", answer: "Yes. We serve all major apartments in Bellandur's IT corridor including those on Outer Ring Road, Bellandur Gate Road, and surrounding areas." },
+  { question: "Why is bird netting especially important around Bellandur?", answer: "Proximity to Bellandur lake attracts extensive bird populations. Our UV-stabilized anti-bird nets create a humane, permanent barrier preventing pigeon roosting and mess." },
 ];
+
 export default function BellandurPage() {
-  return <LocationPageTemplate area="Bellandur" slug="safety-nets-bellandur" imageSrc="/images/ductarea1.webp" imageAlt="Duct area safety net installation in Bellandur Bangalore" faqs={faqs} content={<div className="space-y-8"><div><h2>Safety Nets in Bellandur, Bangalore</h2><p>Bellandur is a rapidly developing area of Bangalore with a growing number of high-rise apartments and IT office parks along the Outer Ring Road. The area is also home to Bellandur Lake, which attracts abundant birdlife — making bird nets and pigeon nets especially important for apartments in this area.</p><p>Shrishti Enterprises provides fast, professional safety net installation across all Bellandur areas.</p></div><div><h2>Why Bird Nets Are Essential in Bellandur</h2><p>Bellandur Lake is one of Bangalore's largest lakes and a habitat for hundreds of bird species. Apartments close to the lake face significant bird problems including pigeon nesting, egret roosting, and bird droppings. Our HDPE bird nets and pigeon nets provide a permanent, humane solution.</p></div><div><h2>Our Services in Bellandur</h2><ul><li>Balcony Safety Nets — from ₹12/sq ft</li><li>Bird &amp; Pigeon Nets — from ₹8/sq ft</li><li>Invisible Grills — from ₹150/sq ft</li><li>Children Safety Nets — from ₹12/sq ft</li><li>Cloth Hangers — from ₹800/unit</li></ul></div><div><h2>Contact Us for Bellandur Safety Nets</h2><p>Call <a href="tel:+91 80880 47056" className="text-green-700 font-semibold">+91 80880 47056</a> for a free inspection. We respond within 30 minutes and offer same-day installation.</p></div></div>} />;
+  return (
+    <LocationPageTemplate
+      area="Bellandur"
+      slug="safety-nets-bellandur"
+      imageSrc="/images/ductarea1.webp"
+      imageAlt="Bird netting and duct protection in Bellandur high-rise"
+      faqs={faqs}
+      content={
+        <div className="space-y-8">
+          <div>
+            <h2>Specialized Bird &amp; Balcony Safety Netting in Bellandur</h2>
+            <p>High-rise apartments along the Bellandur Outer Ring Road corridor frequently face heavy pigeon nesting. Shrishti Enterprises delivers durable, weather-resistant bird exclusion nets and balcony fall-protection solutions tailored for lake-adjacent communities.</p>
+          </div>
+        </div>
+      }
+    />
+  );
 }

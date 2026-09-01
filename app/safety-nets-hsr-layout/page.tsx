@@ -1,12 +1,33 @@
 import { buildMetadata } from "@/lib/metadata";
 import LocationPageTemplate from "@/components/LocationPageTemplate";
-export const metadata = buildMetadata({ title: "Safety Nets in HSR Layout Bangalore", description: "Safety net installation in HSR Layout, Bangalore. Balcony nets, invisible grills, bird nets. Serving all HSR Layout sectors. Call +91 80880 47056.", path: "/safety-nets-hsr-layout", keywords: ["safety nets hsr layout", "invisible grills hsr layout bangalore", "balcony nets hsr layout"] });
+
+export const metadata = buildMetadata({
+  title: "Safety Nets & Invisible Grills in HSR Layout Bangalore",
+  description: "Premium balcony safety nets, invisible grills, and bird deterrence netting across all 7 sectors of HSR Layout by Shrishti Enterprises.",
+  path: "/safety-nets-hsr-layout",
+  keywords: ["safety nets hsr layout", "invisible grills hsr layout", "balcony safety nets hsr sectors"],
+});
+
 const faqs = [
-  { question: "Do you install safety nets in HSR Layout?", answer: "Yes. We serve all HSR Layout sectors (1–7) and surrounding areas including Agara, Belandur Road, and Harlur." },
-  { question: "Are invisible grills popular in HSR Layout?", answer: "Yes. HSR Layout is home to many premium apartments and villas where invisible grills are a popular choice for their clean aesthetics and superior strength." },
-  { question: "How do I book a free inspection in HSR Layout?", answer: "Call or WhatsApp us on +91 80880 47056. We'll schedule a free site inspection at your HSR Layout home within the same day or next morning." },
-  { question: "What is the typical safety net installation cost in HSR Layout?", answer: "Balcony safety nets cost ₹12–₹18/sq ft. Invisible grills cost ₹150–₹250/sq ft. Contact us for exact pricing after free inspection." },
+  { question: "How to schedule a free inspection in HSR Layout?", answer: "Call or WhatsApp us at +91 80880 47056. Our HSR Layout field unit can reach your residence on the same day." },
 ];
+
 export default function HSRLayoutPage() {
-  return <LocationPageTemplate area="HSR Layout" slug="safety-nets-hsr-layout" imageSrc="/images/child.webp" imageAlt="Children safety net installation in HSR Layout Bangalore" faqs={faqs} content={<div className="space-y-8"><div><h2>Safety Nets in HSR Layout, Bangalore</h2><p>HSR Layout is one of Bangalore's most sought-after residential areas, with a mix of independent houses, villas, and modern apartment complexes across its 7 sectors. Shrishti Enterprises provides premium quality safety net and invisible grill installation services across all HSR Layout sectors.</p></div><div><h2>Popular Services in HSR Layout</h2><ul><li><strong>Invisible Grills:</strong> HSR Layout's premium apartments make invisible grills a popular choice. SS316 cable grills that are transparent, strong, and maintenance-free.</li><li><strong>Balcony Safety Nets:</strong> High-tensile nylon and HDPE nets for all balcony types.</li><li><strong>Bird &amp; Pigeon Nets:</strong> HSR Layout's proximity to Agara Lake makes bird problems common.</li><li><strong>Children Safety Nets:</strong> Extra-strong nets for HSR Layout's many family-oriented apartments.</li><li><strong>Cloth Hangers:</strong> Ceiling cloth drying systems for HSR Layout's compact balconies.</li></ul></div><div><h2>HSR Layout Areas We Cover</h2><p>We cover all HSR Layout sectors (1–7), Agara, Harlur, Belandur Road, and adjacent areas of South Bangalore.</p></div><div><h2>Fast Response in HSR Layout</h2><p>Call <a href="tel:+91 80880 47056" className="text-green-700 font-semibold">+91 80880 47056</a>. We respond within 30 minutes and offer same-day installation across HSR Layout.</p></div></div>} />;
+  return (
+    <LocationPageTemplate
+      area="HSR Layout"
+      slug="safety-nets-hsr-layout"
+      imageSrc="/images/child.webp"
+      imageAlt="Child safety net installation in HSR Layout apartment"
+      faqs={faqs}
+      content={
+        <div className="space-y-8">
+          <div>
+            <h2>Comprehensive Safety Netting for HSR Layout Homes</h2>
+            <p>HSR Layout's planned residential layout across Sectors 1 through 7 features a blend of independent villas and multi-floor apartments. Shrishti Enterprises provides tailored safety net solutions, anti-pigeon netting, and stainless steel invisible grills throughout the locality.</p>
+          </div>
+        </div>
+      }
+    />
+  );
 }

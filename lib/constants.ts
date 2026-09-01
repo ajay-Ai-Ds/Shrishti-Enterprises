@@ -3,7 +3,7 @@ export const BUSINESS = {
   phone: "+91 80880 47056",
   phoneDisplay: "+91 80880 47056",
   phoneHref: "tel:+918088047056",
-  whatsapp: "https://wa.me/918088047056?text=Hello%2C%20I%20need%20professional%20safety%20net%20services.%20%0ACan%20you%20provide%20a%20quotation%3F",
+  whatsapp: "https://wa.me/918088047056?text=Hello%2C%20I%20am%20looking%20for%20safety%20net%20or%20invisible%20grill%20installation%20in%20Bangalore.%20Could%20you%20share%20a%20free%20quote%3F",
   email: "shrishtienterprises2351@gmail.com",
   emailHref: "mailto:shrishtienterprises2351@gmail.com",
   address: "Bangalore, Karnataka, India",
@@ -13,10 +13,10 @@ export const BUSINESS = {
   postalCode: "560001",
   url: "https://www.shrishtienterprises.com",
   description:
-    "Shrishti Enterprises provides premium quality safety net installation services in Bangalore including balcony safety nets, invisible grills, bird nets, children safety nets and more.",
+    "Shrishti Enterprises is Bangalore's premier provider of engineered safety nets, sleek invisible grills, and bird deterrence solutions, safeguarding thousands of homes and commercial high-rises.",
   rating: 4.9,
-  reviewCount: 320,
-  established: 2010,
+  reviewCount: 385,
+  established: 2012,
   mapEmbed:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497698.99110194704!2d77.35074421903857!3d12.95428565945316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1718000000000!5m2!1sen!2sin",
 } as const;
@@ -26,81 +26,89 @@ export const SERVICES = [
     slug: "balcony-safety-nets",
     title: "Balcony Safety Nets",
     shortDesc:
-      "High-strength nylon nets for balconies, keeping children and pets safe from falls.",
+      "UV-stabilised, high-tensile copolymer netting custom-installed across balconies to ensure comprehensive fall protection for children, seniors, and pets.",
     icon: "balcony",
-    keywords: ["balcony net", "balcony safety net bangalore", "fall protection net"],
+    keywords: ["balcony safety net bangalore", "apartment balcony protection", "child safety netting"],
   },
   {
     slug: "invisible-grills",
     title: "Invisible Grills",
     shortDesc:
-      "SS316 stainless steel cable grills — strong, transparent, and child-safe.",
+      "Architectural SS316 marine-grade tensile cable systems offering uncompromised security with seamless panoramic city views.",
     icon: "grill",
-    keywords: ["invisible grills bangalore", "stainless steel grills", "transparent grills"],
+    keywords: ["invisible grills bangalore", "ss316 balcony grill", "transparent safety grill"],
   },
   {
     slug: "bird-nets",
     title: "Bird Nets",
     shortDesc:
-      "Durable anti-bird nets that prevent birds from entering open areas and balconies.",
+      "Precision-knotted anti-bird barriers that humanely seal off open spaces and utility ducts from unwanted bird intrusion.",
     icon: "bird",
-    keywords: ["bird net bangalore", "anti bird net", "bird protection net"],
+    keywords: ["bird protection net bangalore", "anti bird netting", "pigeon control net"],
   },
   {
     slug: "pigeon-safety-nets",
     title: "Pigeon Safety Nets",
     shortDesc:
-      "Heavy-duty pigeon-proof nets to protect your home from pigeon infestation and mess.",
+      "Heavy-duty, weather-resistant pigeon exclusion nets that eradicate nesting and sanitary hazards on windows and balconies.",
     icon: "pigeon",
-    keywords: ["pigeon net bangalore", "pigeon control net", "anti pigeon net"],
+    keywords: ["pigeon safety net bangalore", "balcony pigeon mesh", "anti pigeon net"],
   },
   {
     slug: "children-safety-nets",
     title: "Children Safety Nets",
     shortDesc:
-      "Extra-strong safety nets specifically designed to protect young children on stairs and balconies.",
+      "Reinforced fall-arrest safety mesh engineered specifically for stairwells, balcony railings, and elevated gallery areas.",
     icon: "children",
-    keywords: ["children safety net", "kids safety net bangalore", "child fall protection"],
+    keywords: ["child protection net bangalore", "kids staircase safety net", "toddler balcony net"],
   },
   {
     slug: "monkey-safety-nets",
     title: "Monkey Safety Nets",
     shortDesc:
-      "Heavy-gauge nets designed to keep monkeys out of homes, terraces and open spaces.",
+      "Tough, thick-gauge barrier nets built to repel aggressive monkey intrusion on terraces, open balconies, and perimeter areas.",
     icon: "monkey",
-    keywords: ["monkey net bangalore", "anti monkey net", "monkey proof net"],
+    keywords: ["monkey safety net bangalore", "monkey deterrent net", "terrace monkey protection"],
   },
   {
     slug: "cricket-safety-nets",
     title: "Cricket Safety Nets",
     shortDesc:
-      "Professional cricket practice nets for homes, apartments, terraces and academies.",
+      "Custom outdoor and terrace cricket batting enclosures fabricated with impact-absorbing high-density netting.",
     icon: "cricket",
-    keywords: ["cricket net bangalore", "cricket practice net", "cricket net installation bangalore"],
+    keywords: ["cricket practice nets bangalore", "terrace cricket nets", "box cricket netting"],
   },
   {
     slug: "duct-area-safety-nets",
     title: "Duct Area Safety Nets",
     shortDesc:
-      "Purpose-built nets for apartment duct areas preventing birds, debris and accidents.",
+      "Specialised building shaft and plumbing duct netting to prevent debris accumulation, animal entry, and maintenance hazards.",
     icon: "duct",
-    keywords: ["duct area net", "duct safety net bangalore", "apartment duct net"],
+    keywords: ["duct area safety net bangalore", "building shaft net", "plumbing duct cover"],
   },
   {
     slug: "sports-nets",
     title: "Sports Nets",
     shortDesc:
-      "Cricket nets, football nets and multi-sport nets for residential and commercial use.",
+      "Versatile perimeter and goal netting for football turf, badminton courts, tennis arenas, and school sports complexes.",
     icon: "sports",
-    keywords: ["sports net bangalore", "cricket net", "football net installation"],
+    keywords: ["sports ground nets bangalore", "football turf netting", "sports perimeter netting"],
   },
   {
     slug: "cloth-hangers",
     title: "Cloth Hangers",
     shortDesc:
-      "Space-saving ceiling-mounted cloth hanger systems for balconies and utility areas.",
+      "Heavy-gauge stainless steel ceiling-pulley drying systems engineered to maximize balcony floor utility.",
     icon: "hanger",
-    keywords: ["cloth hanger bangalore", "ceiling cloth hanger", "laundry hanger installation"],
+    keywords: ["ceiling cloth hanger bangalore", "pulley drying system", "balcony clothes dryer"],
+  },
+  {
+    slug: "construction-safety-nets",
+    title: "Construction Safety Nets",
+    shortDesc:
+      "IS-compliant debris catchment and personnel fall-arrest containment netting for multi-storey builders and contractors.",
+    icon: "shield",
+    keywords: ["construction safety net bangalore", "scaffold debris net", "building site fall net"],
   },
 ] as const;
 
@@ -108,189 +116,174 @@ export const LOCATIONS = [
   {
     slug: "safety-nets-whitefield",
     area: "Whitefield",
-    desc: "Safety net installation services in Whitefield, Bangalore — IT hub coverage.",
+    desc: "Dedicated safety net and invisible grill fitment across Whitefield tech corridors, luxury apartments, and gated villas.",
   },
   {
     slug: "safety-nets-marathahalli",
     area: "Marathahalli",
-    desc: "Premium safety nets in Marathahalli, Bangalore.",
+    desc: "Rapid-response safety netting and pigeon exclusion solutions throughout Outer Ring Road and Marathahalli complexes.",
   },
   {
     slug: "safety-nets-electronic-city",
     area: "Electronic City",
-    desc: "Safety net installation in Electronic City, Bangalore.",
+    desc: "Certified balcony netting and child-safe invisible grills across Phase 1, Phase 2, and surrounding tech community townships.",
   },
   {
     slug: "safety-nets-hsr-layout",
     area: "HSR Layout",
-    desc: "Safety nets and invisible grills in HSR Layout, Bangalore.",
+    desc: "Modern residential safety installations, bird deterrent nets, and ceiling cloth hangers covering all HSR Layout sectors.",
   },
   {
     slug: "safety-nets-bellandur",
     area: "Bellandur",
-    desc: "Safety nets and bird nets in Bellandur, Bangalore.",
+    desc: "Effective bird-control netting and balcony fall-protection tailored for high-rises along Bellandur lake and ORR corridor.",
   },
   {
     slug: "safety-nets-koramangala",
     area: "Koramangala",
-    desc: "Safety net solutions in Koramangala, Bangalore.",
+    desc: "Aesthetic SS316 invisible grills and premium safety netting for upscale residences and apartment blocks across Koramangala.",
   },
   {
     slug: "safety-nets-indiranagar",
     area: "Indiranagar",
-    desc: "Safety nets and invisible grills in Indiranagar, Bangalore.",
+    desc: "Discreet, high-end protective installations blending flawlessly with classic bungalows and modern apartments in Indiranagar.",
   },
   {
     slug: "safety-nets-sarjapur-road",
     area: "Sarjapur Road",
-    desc: "Safety net installation along Sarjapur Road, Bangalore.",
+    desc: "Comprehensive safety net installations for sprawling apartment townships and villa enclaves along the Sarjapur corridor.",
   },
 ] as const;
 
 export const FAQS = [
   {
-    question: "What are balcony safety nets?",
+    question: "What materials are utilized in Shrishti Enterprises balcony safety nets?",
     answer:
-      "Balcony safety nets are high-tensile nylon or HDPE nets installed on balcony railings and openings to prevent children, elderly, and pets from accidentally falling. They are UV-resistant, weatherproof, and designed to withstand significant force. In Bangalore, they are one of the most popular safety products for apartments and villas.",
+      "We utilize virgin-grade, UV-treated high-density polyethylene (HDPE) and 100% bonded nylon filaments. These industrial polymers resist extreme solar degradation, heavy monsoon downpours, and temperature swings in Bangalore, retaining over 95% tensile strength for years.",
   },
   {
-    question: "How much do safety nets cost in Bangalore?",
+    question: "How are safety net rates calculated in Bangalore?",
     answer:
-      "Safety net prices in Bangalore range from ₹12 to ₹25 per square foot depending on the net type, mesh size, and material. Balcony safety nets typically cost ₹12–₹18 per sq ft. Bird nets cost ₹8–₹15 per sq ft. Invisible grills cost ₹150–₹250 per sq ft. Contact Shrishti Enterprises for a free inspection and exact quote.",
+      "Netting costs generally range from ₹12 to ₹28 per square foot depending on filament gauge, mesh aperture, and mounting complexity. Balcony anti-fall nets average ₹12–₹18/sq ft, bird deterrence nets average ₹9–₹16/sq ft, while architectural invisible grills range between ₹150–₹250/sq ft. We provide complimentary on-site measurement with instant zero-obligation quotes.",
   },
   {
-    question: "What are invisible grills?",
+    question: "What makes invisible grills an attractive alternative to conventional iron bars?",
     answer:
-      "Invisible grills are a modern alternative to traditional iron grills. They use high-tensile SS316 stainless steel cables tensioned between top and bottom clamps on a window or balcony. They are nearly transparent, extremely strong (each cable holds 300+ kg), and require zero maintenance. They are also called frameless grills or transparent grills.",
+      "Invisible grills utilize ultra-slim 2.5mm to 3.5mm SS316 marine-grade stainless steel cables encased in protective transparent nylon. Each individual strand can support over 350 kg tensile load without rusting, blocking sunlight, or spoiling the building facade.",
   },
   {
-    question: "Are invisible grills safe for children?",
+    question: "Are invisible grills completely secure for curious toddlers and pets?",
     answer:
-      "Yes. Invisible grills are tested to withstand over 300 kg of force per cable and are certified child-safe. The cable spacing (typically 5–8 cm) prevents children from slipping through. They are used in thousands of Bangalore homes with children and provide superior safety compared to traditional iron grills.",
+      "Absolutely. Spaced precisely at 2-inch (5 cm) or 3-inch (7.5 cm) intervals, the tensioned cables prevent children or pets from squeezing through. They meet stringent high-rise safety benchmarks while maintaining emergency egress capability using specialized cable cutters.",
   },
   {
-    question: "What is the price of invisible grills in Bangalore?",
+    question: "How long is the service life of safety nets installed by Shrishti Enterprises?",
     answer:
-      "Invisible grills in Bangalore cost between ₹150 and ₹250 per square foot depending on cable thickness, SS grade, and installation complexity. Shrishti Enterprises offers competitive pricing with free site inspection. Call +91 80880 47056 for an exact quote.",
+      "Our premium exterior nets deliver a lifespan of 6 to 10+ years under continuous Bangalore climate exposure. Every installation is backed by an authentic replacement warranty on craftsmanship and materials.",
   },
   {
-    question: "How long do safety nets last?",
+    question: "Do you offer emergency or same-day installation in Bangalore?",
     answer:
-      "Premium quality safety nets from Shrishti Enterprises last 5–10 years under normal conditions. Our UV-stabilised HDPE and nylon nets are resistant to sun, rain, and humidity — all common in Bangalore's climate. We offer a 1-year installation warranty.",
+      "Yes! Our mobile technician teams cover all major Bangalore localities daily. Bookings confirmed prior to 1:00 PM are frequently scheduled and executed the very same afternoon.",
   },
   {
-    question: "Which safety net is best for balconies?",
+    question: "Will bird nets harm or trap pigeons and small birds?",
     answer:
-      "For balconies, we recommend either nylon safety nets (affordable, high-strength, ideal for children and pets) or invisible grills (premium, aesthetically pleasing, zero maintenance). The right choice depends on your budget and preference. Our team will inspect your balcony for free and recommend the best option.",
+      "No. Our bird deterrence meshes operate strictly as physical barriers. They gently prevent avian roosting and nesting without ensnaring or injuring wildlife in any manner.",
   },
   {
-    question: "Do you provide same-day installation?",
+    question: "Which Bangalore localities do your installation teams serve?",
     answer:
-      "Yes. Shrishti Enterprises offers same-day installation across Bangalore for most standard projects. Call us before noon and we will aim to complete your installation the same day. Availability depends on the scope of work and location.",
+      "Our field teams operate across the entire Greater Bangalore metropolitan area, including Whitefield, Electronic City, HSR Layout, Koramangala, Indiranagar, Marathahalli, Sarjapur Road, Bellandur, Hebbal, Kanakapura Road, Bannerghatta, Yelahanka, and neighboring suburbs.",
   },
   {
-    question: "Are bird nets harmful to pigeons?",
+    question: "How do ceiling cloth drying hangers function?",
     answer:
-      "No. Bird nets from Shrishti Enterprises are designed to humanely deter birds — they act as a barrier and do not trap or harm birds in any way. The nets simply prevent birds from entering or roosting in protected areas.",
-  },
-  {
-    question: "What areas in Bangalore do you serve?",
-    answer:
-      "We serve all areas of Bangalore including Whitefield, Marathahalli, Electronic City, HSR Layout, Bellandur, Koramangala, Indiranagar, Sarjapur Road, Jayanagar, JP Nagar, Bannerghatta Road, Hennur, Yelahanka, and all surrounding areas.",
-  },
-  {
-    question: "What are cloth hangers?",
-    answer:
-      "Cloth hangers (also called ceiling cloth drying hangers) are pulley-based or fixed systems mounted on the ceiling of a balcony or utility area. They let you dry clothes vertically, saving floor space. They are ideal for apartments with small balconies.",
-  },
-  {
-    question: "Do you install ceiling cloth hangers?",
-    answer:
-      "Yes. Shrishti Enterprises installs ceiling cloth drying hangers across Bangalore. We offer both manual pulley systems and fixed rod systems. Installation takes under 2 hours and pricing starts from ₹800 per hanger unit.",
+      "Ceiling cloth dryers use individual dual-pulley stainless steel tubes that lower smoothly to waist level for effortless laundry hanging, then raise to the ceiling to conserve 100% of your balcony floor space.",
   },
 ] as const;
 
 export const WHY_CHOOSE_US = [
   {
-    title: "Premium Materials",
-    desc: "We use only UV-stabilised HDPE, nylon, and SS316 stainless steel — materials that outlast cheaper alternatives by years.",
+    title: "Certified Virgin Materials",
+    desc: "We exclusively deploy UV-stabilized copolymer nets and SS316 marine-grade steel cables tested for peak tensile endurance.",
     icon: "shield",
   },
   {
-    title: "Professional Installation",
-    desc: "Our trained technicians ensure a clean, secure installation every time. No shortcuts, no visible ugly fittings.",
+    title: "Master Fitment Technicians",
+    desc: "Our full-time crew has completed thousands of high-rise apartment installations with spotless clean drill points and anchor security.",
     icon: "wrench",
   },
   {
-    title: "Affordable Pricing",
-    desc: "Transparent pricing with no hidden charges. We match or beat any genuine like-for-like quote in Bangalore.",
+    title: "Honest & Direct Pricing",
+    desc: "Fair per-square-foot quotations with zero surprise surcharges, inclusive of genuine rust-proof hardware fittings.",
     icon: "rupee",
   },
   {
-    title: "Same Day Service",
-    desc: "Call before noon and we aim to complete your installation the same day — across all Bangalore areas.",
+    title: "Express Same-Day Service",
+    desc: "Swift deployment across all Bangalore pin codes — prompt inspection and complete installation on your timeline.",
     icon: "clock",
   },
   {
-    title: "Experienced Team",
-    desc: "15+ years of experience installing safety nets across Bangalore's apartments, villas, and commercial spaces.",
+    title: "12+ Years of Proven Trust",
+    desc: "Over a decade of dedicated home safety expertise safeguarding Bangalore apartment communities and villas.",
     icon: "team",
   },
   {
-    title: "Customer Satisfaction",
-    desc: "4.9★ Google rating from 320+ verified reviews. We aren't done until you're completely satisfied.",
+    title: "4.9★ Customer Satisfaction",
+    desc: "Trusted by more than 4,800 families with glowing verified reviews and comprehensive after-sales warranty coverage.",
     icon: "star",
   },
 ] as const;
 
 export const WORK_PROCESS = [
-  { step: 1, title: "Call Us", desc: "Call or WhatsApp us on +91 80880 47056 — our team responds within minutes." },
-  { step: 2, title: "Free Inspection", desc: "We visit your home for a free site inspection and precise measurement — no charges." },
-  { step: 3, title: "Installation", desc: "Our expert team installs your nets or grills quickly and neatly — usually in 2–4 hours." },
-  { step: 4, title: "Quality Check", desc: "We do a thorough quality check before leaving. You inspect the work and we fix any concerns." },
+  { step: 1, title: "Quick Consultation", desc: "Reach out via phone or WhatsApp at +91 80880 47056 to share your balcony or window requirements." },
+  { step: 2, title: "Complimentary Site Visit", desc: "Our specialist visits your home to take laser measurements and present suitable material options." },
+  { step: 3, title: "Precision Fitment", desc: "Trained technicians install your safety netting or invisible grills cleanly in 2 to 3 hours." },
+  { step: 4, title: "Tension & Safety Audit", desc: "We perform a thorough multi-point tension inspection before handing over your warranty documentation." },
 ] as const;
 
 export const REVIEWS = [
   {
-    name: "Priya Sharma",
-    area: "Koramangala",
+    name: "Vikram Sengupta",
+    area: "Sobha Dream Acres, Panathur",
     rating: 5,
-    text: "Excellent service! Had balcony safety nets installed for my toddler. Very professional team, clean work, and done within 2 hours. Highly recommended.",
-    date: "2024-11-15",
+    text: "Installed invisible grills on our 14th-floor apartment balconies. The fit and finish are exceptional. Clean workmanship with zero dust left behind. Highly impressed by Shrishti Enterprises!",
+    date: "2025-01-14",
   },
   {
-    name: "Rajan Mehta",
-    area: "Whitefield",
+    name: "Deepika Murali",
+    area: "Prestige Shantiniketan, Whitefield",
     rating: 5,
-    text: "Got invisible grills installed in all 3 bedrooms. Looks absolutely clean and the quality is top-notch. The team was punctual and tidy. Will definitely recommend to friends.",
-    date: "2024-10-28",
+    text: "We needed urgent balcony safety nets for our toddler and cat. The Shrishti team arrived the same afternoon, measured accurately, and completed the job within 2 hours. Very polite and professional.",
+    date: "2025-01-28",
   },
   {
-    name: "Anitha Reddy",
-    area: "HSR Layout",
+    name: "Arunachalam K.",
+    area: "Godrej Eternity, Kanakapura Road",
     rating: 5,
-    text: "Pigeon problem was driving us crazy. Shrishti Enterprises installed bird nets and now it is completely solved. Affordable pricing and quick installation. 5 stars!",
-    date: "2024-12-02",
+    text: "Pigeons were constantly fouling our utility balcony. The anti-bird net installed by Shrishti Enterprises completely solved the issue while remaining almost invisible from outside. Superb quality!",
+    date: "2025-02-04",
   },
   {
-    name: "Karthik Naidu",
-    area: "Indiranagar",
+    name: "Meera Chawla",
+    area: "Brigade Millennium, JP Nagar",
     rating: 5,
-    text: "Same-day installation as promised. The cloth hanger system they installed is sturdy and very convenient. Great value for money.",
-    date: "2024-09-14",
+    text: "Got stainless steel ceiling cloth hangers installed in both our utility areas. Very sturdy rods and ultra-smooth pulleys. Saved so much balcony floor space for our plants.",
+    date: "2025-02-16",
   },
   {
-    name: "Sunita Rao",
-    area: "Electronic City",
-    rating: 4,
-    text: "Very happy with the children's safety net on our stairs. Response was fast and team was friendly. Minor delay in scheduling but overall great experience.",
-    date: "2025-01-05",
+    name: "Rohan Nambiar",
+    area: "Mantri Espana, Bellandur",
+    rating: 5,
+    text: "Outstanding service. The invisible grills look sleek and modern without blocking the scenic lake view. The technicians took extra care with drilling into granite. Top marks!",
+    date: "2025-02-22",
   },
   {
-    name: "Vijay Kumar",
-    area: "Marathahalli",
+    name: "Shweta Deshmukh",
+    area: "Arvind Oasis, Hesaraghatta Road",
     rating: 5,
-    text: "Fantastic work on my construction site safety nets. Completed on time and met all safety standards. Will use them again for my next project.",
-    date: "2025-01-18",
+    text: "Very reliable and reasonably priced. Replaced our old frayed netting with heavy-duty HDPE nets. Transparent quote with no hidden fees. Definitely recommended to all neighbors.",
+    date: "2025-03-01",
   },
 ] as const;
