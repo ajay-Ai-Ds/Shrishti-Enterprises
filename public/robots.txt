@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.shrishtienterprises.com/sitemap.xml
+Sitemap: https://www.shrishtisafetysolutions.com/sitemap.xml

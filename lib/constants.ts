@@ -11,7 +11,7 @@ export const BUSINESS = {
   state: "Karnataka",
   country: "India",
   postalCode: "560001",
-  url: "https://www.shrishtienterprises.com",
+  url: "https://www.shrishtisafetysolutions.com",
   description:
     "Shrishti Enterprises is Bangalore's premier provider of engineered safety nets, sleek invisible grills, and bird deterrence solutions, safeguarding thousands of homes and commercial high-rises.",
   rating: 4.9,
