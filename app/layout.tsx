@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 import { generateLocalBusinessSchema, generateWebSiteSchema } from "@/lib/schema";
 import { BUSINESS } from "@/lib/constants";
 
@@ -94,6 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main id="main-content" tabIndex={-1}>{children}</main>
         <Footer />
+        <ScrollToTop />
         {/* Floating Action Buttons — Call + WhatsApp */}
         <div className="fixed bottom-6 right-6 z-50 flex flex-col items-center gap-3">
 
