@@ -61,14 +61,14 @@ export default function Header() {
             className="flex items-center gap-3.5 shrink-0 group focus:outline-hidden"
             aria-label="Shrishti Enterprises Homepage"
           >
-            <div className="relative flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+            <div className="relative flex items-center justify-center transition-transform duration-300 group-hover:scale-105 overflow-hidden rounded-xl shadow-xs border border-gray-100">
               <Image
-                src="/images/logo/logo-transparent.png"
+                src="/images/logo/shrishti-logo.jpg"
                 alt="Shrishti Enterprises Logo"
                 width={48}
                 height={48}
                 priority
-                className={`object-contain transition-all duration-300 ${
+                className={`object-cover transition-all duration-300 ${
                   scrolled ? "w-9 h-9 md:w-10 md:h-10" : "w-11 h-11 md:w-12 md:h-12"
                 }`}
               />

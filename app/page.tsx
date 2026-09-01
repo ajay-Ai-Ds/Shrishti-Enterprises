@@ -127,8 +127,8 @@ export default function HomePage() {
                   alt: "Terrace and academy cricket practice net enclosure in Bangalore",
                 },
                 "construction-safety-nets": {
-                  path: "/images/team1.webp",
-                  alt: "Industrial building safety and debris catchment net fitment",
+                  path: "/images/construction-safety-nets.webp",
+                  alt: "Industrial building safety and debris catchment net fitment by Shrishti Enterprises",
                 },
               };
               const img = imageMap[s.slug];

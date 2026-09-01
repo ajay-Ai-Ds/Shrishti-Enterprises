@@ -40,11 +40,11 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-3 mb-4">
             <Image
-              src="/images/logo/logo-icon.webp"
+              src="/images/logo/shrishti-logo.jpg"
               alt="Shrishti Enterprises Logo"
               width={44}
               height={44}
-              className="w-11 h-11 rounded-xl bg-white p-1 object-contain"
+              className="w-11 h-11 rounded-xl object-cover shadow-sm"
             />
             <h3 className="text-white font-bold text-lg">{BUSINESS.name}</h3>
           </div>
