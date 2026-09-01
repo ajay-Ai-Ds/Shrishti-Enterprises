@@ -19,22 +19,24 @@ export const metadata = buildMetadata({
 });
 
 const GALLERY_SLOTS = [
-  { id: 1, label: "Balcony Fall Arrest Netting", path: "/images/balcony.webp", alt: "Balcony fall arrest safety net installation by Shrishti Enterprises" },
-  { id: 2, label: "High-Rise Balcony Mesh Fitment", path: "/images/balcony1.webp", alt: "High-rise apartment balcony netting fitment in Bangalore" },
+  { id: 1, label: "Balcony Fall Arrest Netting", path: "/images/balcony.webp", alt: "Balcony fall arrest safety net installation by Shrishti Enterprises Bangalore" },
+  { id: 2, label: "High-Rise Balcony Mesh Fitment", path: "/images/balcony1.webp", alt: "High-rise apartment balcony netting fitment in Whitefield by Shrishti Enterprises" },
   { id: 3, label: "Tensioned Balcony Screen", path: "/images/balcony2.webp", alt: "Tensioned copolymer balcony protection screen on apartment facade" },
-  { id: 4, label: "Apartment Balcony Barrier", path: "/images/balcony3.webp", alt: "Apartment balcony child safety barrier installation" },
-  { id: 5, label: "Terrace Balcony Netting", path: "/images/balcony4.webp", alt: "Terrace balcony safety netting for multi-storey residential complex" },
+  { id: 4, label: "Apartment Balcony Barrier", path: "/images/balcony3.webp", alt: "Apartment balcony child safety barrier installation by Shrishti Enterprises" },
+  { id: 5, label: "Terrace Balcony Netting", path: "/images/balcony4.webp", alt: "Terrace balcony safety netting for multi-storey residential complex in Bangalore" },
   { id: 6, label: "Architectural Balcony Grills", path: "/images/balconygrill.webp", alt: "Architectural stainless steel balcony safety grill system" },
-  { id: 7, label: "SS316 Balcony Cable Setup", path: "/images/balconygrill1.webp", alt: "SS316 marine cable installation on residential balcony" },
-  { id: 8, label: "Anti-Bird Balcony Mesh", path: "/images/birdsafety.webp", alt: "Anti-bird mesh installation preventing bird intrusion on balcony" },
-  { id: 9, label: "Child Protection Netting", path: "/images/child.webp", alt: "Child protection safety net on staircase and balcony railing" },
-  { id: 10, label: "Child-Safe Window Barrier", path: "/images/childrensafetynet.webp", alt: "Child-safe window and gallery protective safety netting" },
-  { id: 11, label: "Ceiling Cloth Dryer Rack", path: "/images/clothhanger.jpg", alt: "Ceiling-mounted stainless steel pulley cloth hanger system" },
-  { id: 12, label: "Building Duct Shaft Netting", path: "/images/ductarea1.webp", alt: "Building utility duct and shaft safety net installation" },
-  { id: 13, label: "Plumbing Duct Cover Mesh", path: "/images/ductarea2.webp", alt: "Plumbing duct area safety mesh covering open shaft" },
-  { id: 14, label: "SS316 Invisible Grills", path: "/images/invisiblegrill.webp", alt: "Sleek SS316 invisible grill system on panoramic apartment window" },
-  { id: 15, label: "Heavy-Gauge Monkey Barrier", path: "/images/monkey.webp", alt: "Heavy-gauge monkey deterrent barrier netting on terrace" },
-  { id: 16, label: "Pigeon Exclusion Screen", path: "/images/pigeonnet.webp", alt: "Durable pigeon exclusion netting on apartment balcony" },
+  { id: 7, label: "SS316 Balcony Cable Setup", path: "/images/balconygrill1.webp", alt: "SS316 marine cable installation on residential balcony in Bangalore" },
+  { id: 8, label: "Balcony Grille & Net Work", path: "/images/grillwork.webp", alt: "Balcony grille and safety netting installation by Shrishti Enterprises" },
+  { id: 9, label: "Anti-Bird Balcony Mesh", path: "/images/birdsafety.webp", alt: "Anti-bird mesh installation preventing bird intrusion on balcony" },
+  { id: 10, label: "Child Protection Netting", path: "/images/child.webp", alt: "Child protection safety net on staircase and balcony railing" },
+  { id: 11, label: "Child-Safe Window Barrier", path: "/images/childrensafetynet.webp", alt: "Child-safe window and gallery protective safety netting by Shrishti Enterprises" },
+  { id: 12, label: "Ceiling Cloth Dryer Rack", path: "/images/clothhanger.jpg", alt: "Ceiling-mounted stainless steel pulley cloth hanger system in Bangalore" },
+  { id: 13, label: "Building Duct Shaft Netting", path: "/images/ductarea1.webp", alt: "Building utility duct and shaft safety net installation" },
+  { id: 14, label: "Plumbing Duct Cover Mesh", path: "/images/ductarea2.webp", alt: "Plumbing duct area safety mesh covering open shaft in Bangalore" },
+  { id: 15, label: "SS316 Invisible Grills", path: "/images/invisiblegrill.webp", alt: "Sleek SS316 invisible grill system on panoramic apartment window" },
+  { id: 16, label: "Heavy-Gauge Monkey Barrier", path: "/images/monkey.webp", alt: "Heavy-gauge monkey deterrent barrier netting on Bangalore terrace" },
+  { id: 17, label: "Pigeon Exclusion Screen", path: "/images/pigeonnet.webp", alt: "Durable pigeon exclusion netting on apartment balcony by Shrishti Enterprises" },
+  { id: 18, label: "Master Installation Team", path: "/images/team.webp", alt: "Certified technical specialists of Shrishti Enterprises on site in Bangalore" },
 ];
 
 export default function GalleryPage() {
