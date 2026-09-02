@@ -103,7 +103,7 @@ export default function Header() {
           >
             <div className="relative shrink-0 flex items-center justify-center transition-transform duration-300 group-hover:scale-105 overflow-hidden rounded-xl bg-white shadow-xs border border-amber-500/20 p-0.5">
               <Image
-                src="/images/logo/shrishti-logo.jpg"
+                src="/images/logo/shrishti-safetysolutions.jpg"
                 alt="Shrishti Enterprises Logo"
                 width={52}
                 height={52}
