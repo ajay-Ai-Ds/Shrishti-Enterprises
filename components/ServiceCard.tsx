@@ -14,10 +14,12 @@ export default function ServiceCard({ title, description, slug, imagePath, image
   return (
     <Link
       href={`/${slug}`}
-      className={`group block rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ${featured ? "ring-2 ring-green-500" : ""}`}
+      className={`group block rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ${
+        featured ? "ring-2 ring-[#AC7B25]/40" : ""
+      }`}
     >
       {/* ── Image ── */}
-      <div className="relative w-full aspect-[4/3] bg-gradient-to-br from-green-50 to-green-100 overflow-hidden">
+      <div className="relative w-full aspect-[4/3] bg-[#FAFAFA] overflow-hidden">
         {imagePath ? (
           <Image
             src={imagePath}
@@ -28,24 +30,31 @@ export default function ServiceCard({ title, description, slug, imagePath, image
             loading="lazy"
           />
         ) : (
-          <div className="absolute inset-0 flex flex-col items-center justify-center border-2 border-dashed border-green-300/60 m-3 rounded-xl" role="img" aria-label={`Placeholder for ${title} image`}>
-            <svg className="w-10 h-10 text-green-400/50 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1} aria-hidden="true">
+          <div className="absolute inset-0 flex flex-col items-center justify-center border-2 border-dashed border-[#AC7B25]/20 m-3 rounded-xl" role="img" aria-label={`Placeholder for ${title} image`}>
+            <svg className="w-10 h-10 text-[#AC7B25]/40 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1} aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3 21h18M3.75 3h16.5M4.5 3v18M19.5 3v18" />
             </svg>
-            <p className="text-green-600/60 text-xs font-medium text-center px-2">{title}</p>
-            <p className="text-green-500/40 text-[10px] mt-0.5">/images/{slug}.jpg</p>
+            <p className="text-[#AC7B25]/70 text-xs font-medium text-center px-2">{title}</p>
+            <p className="text-gray-400 text-[10px] mt-0.5">/images/{slug}.jpg</p>
           </div>
         )}
         {featured && (
-          <span className="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow z-10">Popular</span>
+          <span
+            className="absolute top-3 right-3 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md z-10"
+            style={{
+              background: "linear-gradient(135deg, #AC7B25 0%, #C59740 100%)",
+            }}
+          >
+            Popular
+          </span>
         )}
       </div>
 
       {/* ── Content ── */}
       <div className="p-5">
-        <h3 className="font-bold text-gray-900 text-lg mb-2 group-hover:text-green-700 transition-colors">{title}</h3>
-        <p className="text-gray-500 text-sm leading-relaxed">{description}</p>
-        <div className="mt-4 flex items-center gap-1 text-green-600 text-sm font-semibold">
+        <h3 className="font-bold text-[#1E2125] text-lg mb-2 group-hover:text-[#AC7B25] transition-colors">{title}</h3>
+        <p className="text-[#6C6C6E] text-sm leading-relaxed">{description}</p>
+        <div className="mt-4 flex items-center gap-1 text-[#AC7B25] text-sm font-semibold">
           Learn more
           <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -55,4 +64,3 @@ export default function ServiceCard({ title, description, slug, imagePath, image
     </Link>
   );
 }
-

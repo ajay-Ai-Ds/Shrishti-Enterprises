@@ -50,27 +50,29 @@ export default function GalleryPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <Breadcrumb items={[{ name: "Project Gallery", href: "/gallery" }]} />
 
-      <section className="py-16 md:py-20 bg-gradient-to-br from-green-800 via-green-700 to-green-900 text-white text-center">
-        <div className="max-w-4xl mx-auto px-4">
-          <span className="inline-block bg-white/20 text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3 backdrop-blur-xs">
+      <section className="py-16 md:py-20 bg-[#1E2125] text-white text-center relative overflow-hidden border-b border-gray-800">
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#AC7B25]/10 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="max-w-4xl mx-auto px-4 relative z-10">
+          <span className="inline-block bg-[#AC7B25]/20 text-[#C59740] border border-[#AC7B25]/30 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3">
             Installation Portfolio
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
             Our Workmanship &amp; Completed Projects
           </h1>
-          <p className="text-lg md:text-xl text-green-100 max-w-2xl mx-auto font-normal leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-normal leading-relaxed">
             Browse real installations completed by our master technicians across premier Bangalore communities and high-rises.
           </p>
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-[#FAFAFA]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             {GALLERY_SLOTS.map((slot) => (
               <div
                 key={slot.id}
-                className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-xs transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-xs transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#AC7B25]/30"
               >
                 <div className="relative aspect-square w-full bg-gray-100">
                   <Image
@@ -83,8 +85,8 @@ export default function GalleryPage() {
                   />
                 </div>
                 <div className="border-t border-gray-100 px-4 py-3 bg-white">
-                  <p className="text-xs font-bold uppercase tracking-wider text-green-700 mb-0.5">Verified Installation</p>
-                  <p className="text-sm font-semibold text-gray-800">{slot.label}</p>
+                  <p className="text-xs font-bold uppercase tracking-wider text-[#AC7B25] mb-0.5">Verified Installation</p>
+                  <p className="text-sm font-semibold text-[#1E2125]">{slot.label}</p>
                 </div>
               </div>
             ))}

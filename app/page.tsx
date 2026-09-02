@@ -24,7 +24,7 @@ export default function HomePage() {
     {
       question: "How do balcony safety nets safeguard high-rise apartments in Bangalore?",
       answer:
-        "Engineered with virgin copolymer and UV inhibitors, our safety nets create an impenetrable, flexible barrier preventing accidental falls of children and pets while allowing unrestricted breeze and panoramic views.",
+        "Engineered with virgin copolymer twines and UV inhibitors, our safety nets create an impenetrable, flexible barrier preventing accidental falls of children and pets while allowing unrestricted breeze and panoramic views.",
     },
     {
       question: "What is the typical pricing for safety netting across Bangalore homes?",
@@ -53,17 +53,17 @@ export default function HomePage() {
       <HeroSlider />
 
       {/* Stats bar */}
-      <div className="bg-green-700 text-white shadow-inner">
-        <div className="max-w-7xl mx-auto px-4 py-6 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+      <div className="bg-[#1E2125] text-white border-b border-gray-800 shadow-inner">
+        <div className="max-w-7xl mx-auto px-4 py-7 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
           {[
-            { val: "12+ Years", label: "Industry Expertise" },
-            { val: "4,800+", label: "Homes & Balconies Protected" },
+            { val: "12+ Years", label: "Industry Leadership" },
+            { val: "4,800+", label: "Bangalore Homes Secured" },
             { val: "4.9 / 5.0", label: "Customer Approval Rating" },
             { val: "Same Day", label: "Express Fitment Available" },
           ].map((s) => (
             <div key={s.label} className="p-2">
-              <p className="text-2xl md:text-3xl font-extrabold tracking-tight">{s.val}</p>
-              <p className="text-green-100 text-xs md:text-sm mt-1 font-medium">{s.label}</p>
+              <p className="text-2xl md:text-3xl font-extrabold tracking-tight text-[#C59740]">{s.val}</p>
+              <p className="text-gray-300 text-xs md:text-sm mt-1 font-medium">{s.label}</p>
             </div>
           ))}
         </div>
@@ -73,13 +73,13 @@ export default function HomePage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-14">
-            <span className="inline-block bg-green-100 text-green-700 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3">
+            <span className="inline-block bg-[#FAFAFA] text-[#AC7B25] border border-[#AC7B25]/20 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3">
               Comprehensive Protection
             </span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-              Engineered Safety Nets & Invisible Grills for Bangalore Homes
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#1E2125] tracking-tight">
+              Engineered Safety Nets &amp; Invisible Grills for Bangalore Homes
             </h2>
-            <p className="mt-3 text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            <p className="mt-3 text-[#6C6C6E] max-w-2xl mx-auto leading-relaxed text-sm md:text-base">
               Custom-crafted architectural solutions designed to protect your loved ones from high-rise hazards without sacrificing aesthetic elegance or outdoor views.
             </p>
           </div>
@@ -152,7 +152,7 @@ export default function HomePage() {
       <WhyChooseUs />
 
       {/* About Shrishti Snapshot */}
-      <section className="py-16 md:py-24 bg-gray-50 border-y border-gray-100">
+      <section className="py-16 md:py-24 bg-[#FAFAFA] border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Team image */}
@@ -169,16 +169,16 @@ export default function HomePage() {
 
             {/* Content */}
             <div>
-              <span className="inline-block bg-green-100 text-green-700 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
+              <span className="inline-block bg-white text-[#AC7B25] border border-[#AC7B25]/20 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4 shadow-xs">
                 The Shrishti Standard
               </span>
-              <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-5 leading-tight">
-                Bangalore&apos;s Benchmark in High-Rise & Balcony Safety
+              <h2 className="text-3xl md:text-4xl font-extrabold text-[#1E2125] mb-5 leading-tight tracking-tight">
+                Bangalore&apos;s Benchmark in High-Rise &amp; Balcony Safety
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-[#6C6C6E] leading-relaxed mb-4">
                 At Shrishti Enterprises, we combine industrial polymer science with artisan craftsmanship. We understand that apartment living in Bangalore demands uncompromising safety without compromising expansive balcony views or building aesthetics.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-[#6C6C6E] leading-relaxed mb-6">
                 From precision tensioning of SS316 marine cables to UV-shielded copolymer balcony nets, our certified technicians treat every home with utmost care — delivering dust-free drilling, durable anchor points, and authentic replacement warranties.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-8">
@@ -188,17 +188,20 @@ export default function HomePage() {
                   { val: "100%", label: "Rust-Proof Hardware" },
                   { val: "30 Min", label: "Average Response Time" },
                 ].map((s) => (
-                  <div key={s.label} className="bg-white rounded-2xl p-4 border border-gray-100 shadow-sm text-center">
-                    <p className="text-2xl font-extrabold text-green-700">{s.val}</p>
-                    <p className="text-gray-500 text-xs md:text-sm mt-0.5">{s.label}</p>
+                  <div key={s.label} className="bg-white rounded-2xl p-4 border border-gray-200/80 shadow-xs text-center">
+                    <p className="text-2xl font-extrabold text-[#AC7B25]">{s.val}</p>
+                    <p className="text-[#6C6C6E] text-xs md:text-sm mt-0.5">{s.label}</p>
                   </div>
                 ))}
               </div>
               <Link
                 href="/about-us"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 text-white font-bold rounded-xl hover:bg-green-700 transition-colors shadow-md"
+                className="inline-flex items-center gap-2 px-6 py-3.5 text-white font-bold rounded-xl shadow-md hover:scale-105 transition-transform"
+                style={{
+                  background: "linear-gradient(135deg, #AC7B25 0%, #C59740 100%)",
+                }}
               >
-                Discover Our Story & Standards
+                Discover Our Story &amp; Standards
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
@@ -215,60 +218,90 @@ export default function HomePage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <span className="inline-block bg-green-100 text-green-700 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3">
+            <span className="inline-block bg-[#FAFAFA] text-[#AC7B25] border border-[#AC7B25]/20 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3">
               Project Showcase
             </span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#1E2125] tracking-tight">
               Recent Installations Across Bangalore Communities
             </h2>
-            <p className="mt-3 text-gray-600 max-w-xl mx-auto leading-relaxed">
+            <p className="mt-3 text-[#6C6C6E] max-w-xl mx-auto leading-relaxed text-sm md:text-base">
               Explore our real-world portfolio across premier Bangalore apartments, villas, and commercial complexes.
             </p>
           </div>
 
           {/* Gallery Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-            <div className="col-span-2 md:col-span-1 relative h-64 md:h-80 rounded-2xl overflow-hidden group cursor-pointer shadow-md hover:shadow-xl transition-all duration-300">
+            <div className="col-span-2 md:col-span-1 relative h-64 md:h-80 rounded-2xl overflow-hidden group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300">
               <Image src="/images/team.webp" alt="Shrishti Enterprises technical specialists executing precision fitment" fill className="object-cover group-hover:scale-110 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" loading="lazy" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-              <span className="absolute bottom-4 left-4 text-white font-bold text-sm bg-green-600 px-3 py-1 rounded-full">Trained Technicians</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <span
+                className="absolute bottom-4 left-4 text-white font-bold text-xs md:text-sm px-3.5 py-1 rounded-full shadow-md"
+                style={{ background: "linear-gradient(135deg, #AC7B25 0%, #C59740 100%)" }}
+              >
+                Trained Technicians
+              </span>
             </div>
 
-            <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group cursor-pointer shadow-md hover:shadow-xl transition-all duration-300">
+            <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300">
               <Image src="/images/monkey.webp" alt="Heavy-gauge monkey barrier netting on Bangalore villa terrace" fill className="object-cover group-hover:scale-110 transition-transform duration-500" sizes="(max-width: 768px) 50vw, 33vw" loading="lazy" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-              <span className="absolute bottom-3 left-3 text-white font-bold text-xs bg-green-600 px-2.5 py-1 rounded-full">Monkey Nets</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <span
+                className="absolute bottom-3 left-3 text-white font-bold text-xs px-2.5 py-1 rounded-full shadow-md"
+                style={{ background: "linear-gradient(135deg, #AC7B25 0%, #C59740 100%)" }}
+              >
+                Monkey Nets
+              </span>
             </div>
 
-            <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group cursor-pointer shadow-md hover:shadow-xl transition-all duration-300">
+            <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300">
               <Image src="/images/invisiblegrill.webp" alt="Architectural SS316 invisible grills on high-rise balcony" fill className="object-cover group-hover:scale-110 transition-transform duration-500" sizes="(max-width: 768px) 50vw, 33vw" loading="lazy" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-              <span className="absolute bottom-3 left-3 text-white font-bold text-xs bg-green-600 px-2.5 py-1 rounded-full">Invisible Grills</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <span
+                className="absolute bottom-3 left-3 text-white font-bold text-xs px-2.5 py-1 rounded-full shadow-md"
+                style={{ background: "linear-gradient(135deg, #AC7B25 0%, #C59740 100%)" }}
+              >
+                Invisible Grills
+              </span>
             </div>
 
-            <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group cursor-pointer shadow-md hover:shadow-xl transition-all duration-300">
+            <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300">
               <Image src="/images/pigeon-safety-nets.webp" alt="Discreet pigeon netting installed on residential balcony" fill className="object-cover group-hover:scale-110 transition-transform duration-500" sizes="(max-width: 768px) 50vw, 33vw" loading="lazy" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-              <span className="absolute bottom-3 left-3 text-white font-bold text-xs bg-green-600 px-2.5 py-1 rounded-full">Pigeon Nets</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <span
+                className="absolute bottom-3 left-3 text-white font-bold text-xs px-2.5 py-1 rounded-full shadow-md"
+                style={{ background: "linear-gradient(135deg, #AC7B25 0%, #C59740 100%)" }}
+              >
+                Pigeon Nets
+              </span>
             </div>
 
-            <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group cursor-pointer shadow-md hover:shadow-xl transition-all duration-300">
+            <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300">
               <Image src="/images/cricket.jpeg" alt="Impact-absorbing cricket practice netting enclosure" fill className="object-cover group-hover:scale-110 transition-transform duration-500" sizes="(max-width: 768px) 50vw, 33vw" loading="lazy" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-              <span className="absolute bottom-3 left-3 text-white font-bold text-xs bg-green-600 px-2.5 py-1 rounded-full">Cricket Nets</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <span
+                className="absolute bottom-3 left-3 text-white font-bold text-xs px-2.5 py-1 rounded-full shadow-md"
+                style={{ background: "linear-gradient(135deg, #AC7B25 0%, #C59740 100%)" }}
+              >
+                Cricket Nets
+              </span>
             </div>
 
-            <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group cursor-pointer shadow-md hover:shadow-xl transition-all duration-300">
+            <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300">
               <Image src="/images/balcony.webp" alt="High-strength copolymer balcony safety net installation" fill className="object-cover group-hover:scale-110 transition-transform duration-500" sizes="(max-width: 768px) 50vw, 33vw" loading="lazy" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-              <span className="absolute bottom-3 left-3 text-white font-bold text-xs bg-green-600 px-2.5 py-1 rounded-full">Balcony Nets</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <span
+                className="absolute bottom-3 left-3 text-white font-bold text-xs px-2.5 py-1 rounded-full shadow-md"
+                style={{ background: "linear-gradient(135deg, #AC7B25 0%, #C59740 100%)" }}
+              >
+                Balcony Nets
+              </span>
             </div>
           </div>
 
-          <div className="text-center mt-8">
+          <div className="text-center mt-9">
             <Link
               href="/gallery"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-green-600 text-green-700 font-bold rounded-xl hover:bg-green-600 hover:text-white transition-all duration-200 shadow-sm hover:shadow-md"
+              className="inline-flex items-center gap-2 px-7 py-3.5 bg-white border-2 border-[#AC7B25] text-[#AC7B25] font-bold rounded-xl hover:bg-[#AC7B25] hover:text-white transition-all duration-200 shadow-sm hover:shadow-md"
             >
               Explore Full Gallery Portfolio
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -283,27 +316,27 @@ export default function HomePage() {
       <Reviews />
 
       {/* Areas We Serve */}
-      <section className="py-16 md:py-20 bg-gray-50 border-t border-gray-100">
+      <section className="py-16 md:py-20 bg-[#FAFAFA] border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-10">
-            <span className="inline-block bg-green-100 text-green-700 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3">
+            <span className="inline-block bg-white text-[#AC7B25] border border-[#AC7B25]/20 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3 shadow-xs">
               Citywide Coverage
             </span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#1E2125] tracking-tight">
               Serving Every Major Residential Hub in Bangalore
             </h2>
-            <p className="mt-2 text-gray-600 max-w-lg mx-auto text-sm">
-              Same-day inspection teams deployed daily across all Bangalore pin codes and tech townships.
+            <p className="mt-2 text-[#6C6C6E] max-w-lg mx-auto text-sm leading-relaxed">
+              Same-day inspection units deployed daily across all Bangalore pin codes and tech townships.
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3.5">
             {LOCATIONS.map((loc) => (
               <Link
                 key={loc.slug}
                 href={`/${loc.slug}`}
-                className="flex items-center gap-2 p-4 bg-white rounded-xl border border-gray-200 hover:bg-green-50 hover:border-green-300 hover:text-green-800 transition-all text-gray-700 text-sm font-medium shadow-xs"
+                className="flex items-center gap-2.5 p-4 bg-white rounded-xl border border-gray-200/80 hover:bg-[#FAFAFA] hover:border-[#AC7B25]/40 hover:text-[#AC7B25] transition-all text-[#1E2125] text-sm font-semibold shadow-xs group"
               >
-                <svg className="w-4 h-4 text-green-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+                <svg className="w-4 h-4 text-[#AC7B25] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                 </svg>
@@ -327,9 +360,9 @@ export default function HomePage() {
       />
 
       {/* Common Queries / People Also Ask */}
-      <section className="py-12 bg-green-50/70 border-t border-green-100">
+      <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Frequently Explored Safety Topics</h2>
+          <h2 className="text-2xl font-bold text-[#1E2125] mb-6 text-center tracking-tight">Frequently Explored Safety Topics</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               "What safety net thickness is optimal for high-rise apartment balconies?",
@@ -342,9 +375,9 @@ export default function HomePage() {
               <Link
                 key={q}
                 href="/contact"
-                className="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-100 hover:border-green-300 hover:shadow-xs transition-all text-sm text-gray-700 hover:text-green-700"
+                className="flex items-start gap-3 p-4 bg-[#FAFAFA] rounded-xl border border-gray-200/80 hover:border-[#AC7B25]/40 hover:shadow-xs transition-all text-sm text-[#1E2125] hover:text-[#AC7B25]"
               >
-                <svg className="w-4 h-4 text-green-600 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
+                <svg className="w-4 h-4 text-[#AC7B25] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
                 </svg>
                 {q}

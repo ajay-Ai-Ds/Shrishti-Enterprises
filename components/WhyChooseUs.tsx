@@ -35,17 +35,17 @@ const ICONS: Record<string, React.ReactNode> = {
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-16 md:py-24 bg-gray-50 border-t border-gray-100">
+    <section className="py-16 md:py-24 bg-[#FAFAFA] border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <span className="inline-block bg-green-100 text-green-700 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3">
+          <span className="inline-block bg-white text-[#AC7B25] border border-[#AC7B25]/20 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3 shadow-xs">
             The Shrishti Advantage
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-            Why Bangalore Homeowners Rely on Shrishti Enterprises
+          <h2 className="text-3xl md:text-4xl font-extrabold text-[#1E2125] tracking-tight">
+            Why Bangalore Property Owners Choose Shrishti Enterprises
           </h2>
-          <p className="mt-3 text-gray-600 max-w-2xl mx-auto leading-relaxed text-sm md:text-base">
-            Engineered materials, certified load tolerances, and spotless dust-free fitments trusted by over 4,800 families across Bangalore.
+          <p className="mt-3 text-[#6C6C6E] max-w-2xl mx-auto leading-relaxed text-sm md:text-base">
+            Engineered polymers, precision cable tensioning, and dust-free installations trusted by more than 4,800 families across Bangalore.
           </p>
         </div>
 
@@ -53,13 +53,13 @@ export default function WhyChooseUs() {
           {WHY_CHOOSE_US.map((item) => (
             <div
               key={item.title}
-              className="bg-white rounded-2xl p-6 shadow-xs hover:shadow-lg transition-all duration-300 border border-gray-200/80 hover:border-green-200"
+              className="bg-white rounded-2xl p-6 shadow-xs hover:shadow-lg transition-all duration-300 border border-gray-200/70 hover:border-[#AC7B25]/40 group"
             >
-              <div className="w-14 h-14 rounded-2xl bg-green-100 text-green-700 flex items-center justify-center mb-4" aria-hidden="true">
+              <div className="w-14 h-14 rounded-2xl bg-[#FAFAFA] border border-gray-200 text-[#AC7B25] group-hover:border-[#AC7B25]/40 group-hover:bg-[#AC7B25]/5 flex items-center justify-center mb-4 transition-colors" aria-hidden="true">
                 {ICONS[item.icon]}
               </div>
-              <h3 className="font-bold text-gray-900 text-lg mb-2">{item.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+              <h3 className="font-bold text-[#1E2125] text-lg mb-2 group-hover:text-[#AC7B25] transition-colors">{item.title}</h3>
+              <p className="text-[#6C6C6E] text-sm leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>

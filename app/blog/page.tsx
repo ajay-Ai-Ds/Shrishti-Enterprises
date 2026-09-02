@@ -81,15 +81,17 @@ export default function BlogIndexPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <Breadcrumb items={[{ name: "Blog", href: "/blog" }]} />
 
-      <section className="py-16 bg-gradient-to-br from-green-800 via-green-700 to-green-900 text-white text-center">
-        <div className="max-w-4xl mx-auto px-4">
-          <span className="inline-block bg-white/20 text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3 backdrop-blur-xs">
+      <section className="py-16 bg-[#1E2125] text-white text-center relative overflow-hidden border-b border-gray-800">
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#AC7B25]/10 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="max-w-4xl mx-auto px-4 relative z-10">
+          <span className="inline-block bg-[#AC7B25]/20 text-[#C59740] border border-[#AC7B25]/30 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3">
             Knowledge Base &amp; Technical Insights
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
             Safety Net &amp; Architectural Grill Guides
           </h1>
-          <p className="text-lg md:text-xl text-green-100 max-w-2xl mx-auto font-normal">
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-normal leading-relaxed">
             Practical insights and home safety engineering advice from Shrishti Enterprises technical team.
           </p>
         </div>
@@ -102,18 +104,18 @@ export default function BlogIndexPage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group block bg-white rounded-2xl border border-gray-200/90 shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+                className="group block bg-white rounded-2xl border border-gray-200/90 shadow-xs hover:shadow-xl hover:-translate-y-1 hover:border-[#AC7B25]/40 transition-all duration-300 overflow-hidden"
               >
-                <div className="aspect-[16/9] bg-gradient-to-br from-green-50 to-emerald-100 flex items-center justify-center border-b border-gray-100 p-6 text-center">
+                <div className="aspect-[16/9] bg-gradient-to-br from-[#FAFAFA] to-gray-100 flex items-center justify-center border-b border-gray-100 p-6 text-center">
                   <div>
-                    <span className="inline-block bg-white/80 text-green-800 text-xs font-bold px-3 py-1 rounded-full shadow-xs mb-2">
+                    <span className="inline-block bg-white text-[#AC7B25] border border-[#AC7B25]/20 text-xs font-bold px-3 py-1 rounded-full shadow-xs mb-2">
                       Technical Article
                     </span>
-                    <p className="text-gray-700 font-semibold text-xs">{post.title}</p>
+                    <p className="text-[#1E2125] font-semibold text-xs">{post.title}</p>
                   </div>
                 </div>
                 <div className="p-6">
-                  <div className="flex items-center gap-2 mb-3 text-xs text-gray-500 font-medium">
+                  <div className="flex items-center gap-2 mb-3 text-xs text-[#6C6C6E] font-medium">
                     <span>
                       {new Date(post.date).toLocaleDateString("en-IN", {
                         year: "numeric",
@@ -124,10 +126,10 @@ export default function BlogIndexPage() {
                     <span>•</span>
                     <span>{post.readTime} read</span>
                   </div>
-                  <h2 className="font-bold text-gray-900 text-base leading-snug mb-2 group-hover:text-green-700 transition-colors">
+                  <h2 className="font-bold text-[#1E2125] text-base leading-snug mb-2 group-hover:text-[#AC7B25] transition-colors">
                     {post.title}
                   </h2>
-                  <p className="text-gray-600 text-sm leading-relaxed">{post.desc}</p>
+                  <p className="text-[#6C6C6E] text-sm leading-relaxed">{post.desc}</p>
                 </div>
               </Link>
             ))}

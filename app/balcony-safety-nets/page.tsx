@@ -61,22 +61,22 @@ export default function BalconySafetyNetsPage() {
 
           <div>
             <h2>Transparent Pricing Guide for Bangalore Installations</h2>
-            <div className="bg-green-50 rounded-2xl p-6 border border-green-100 not-prose shadow-xs">
+            <div className="bg-[#FAFAFA] rounded-2xl p-6 border border-gray-200/80 not-prose shadow-xs">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="text-left text-green-900 font-bold border-b border-green-200">
+                  <tr className="text-left text-[#1E2125] font-bold border-b border-[#AC7B25]/20">
                     <th className="pb-2">Mesh Grade</th>
                     <th className="pb-2">Estimated Rate (per sq ft)</th>
                     <th className="pb-2">Primary Application</th>
                   </tr>
                 </thead>
-                <tbody className="text-gray-700">
-                  <tr className="border-b border-gray-100"><td className="py-2.5 font-medium">Standard High-Tensile Nylon</td><td>₹12 – ₹15</td><td>Standard apartment balconies &amp; windows</td></tr>
-                  <tr className="border-b border-gray-100"><td className="py-2.5 font-medium">UV-Fortified Premium Nylon</td><td>₹15 – ₹18</td><td>High-rise balconies (10th floor &amp; above)</td></tr>
-                  <tr><td className="py-2.5 font-medium">Heavy-Gauge Knotted HDPE</td><td>₹17 – ₹24</td><td>Expansive terraces, galleries &amp; villas</td></tr>
+                <tbody className="text-[#6C6C6E]">
+                  <tr className="border-b border-gray-200/60"><td className="py-2.5 font-medium text-[#1E2125]">Standard High-Tensile Nylon</td><td>₹12 – ₹15</td><td>Standard apartment balconies &amp; windows</td></tr>
+                  <tr className="border-b border-gray-200/60"><td className="py-2.5 font-medium text-[#1E2125]">UV-Fortified Premium Nylon</td><td>₹15 – ₹18</td><td>High-rise balconies (10th floor &amp; above)</td></tr>
+                  <tr><td className="py-2.5 font-medium text-[#1E2125]">Heavy-Gauge Knotted HDPE</td><td>₹17 – ₹24</td><td>Expansive terraces, galleries &amp; villas</td></tr>
                 </tbody>
               </table>
-              <p className="mt-3 text-xs text-gray-500">*All rates include heavy-duty SS304 mounting hardware, perimeter rope binding, and certified technician installation.</p>
+              <p className="mt-3 text-xs text-[#6C6C6E]">*All rates include heavy-duty SS304 mounting hardware, perimeter rope binding, and certified technician installation.</p>
             </div>
           </div>
 

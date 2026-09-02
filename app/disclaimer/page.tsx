@@ -5,14 +5,15 @@ import Breadcrumb from "@/components/Breadcrumb";
 import CTABanner from "@/components/CTABanner";
 
 export const metadata = buildMetadata({
-  title: "Disclaimer & Safety Standards | Shrishti Enterprises",
+  title: "Disclaimer & Safety Guidelines | Shrishti Enterprises",
   description:
-    "Safety load tolerances, installation disclaimers, and professional advisory notices for Shrishti Enterprises services in Bangalore.",
+    "Review important safety disclosures, structural load limits, and maintenance guidelines for balcony safety nets and invisible grills installed by Shrishti Enterprises in Bangalore.",
   path: "/disclaimer",
   keywords: [
-    "safety net disclaimer",
-    "shrishti enterprises safety standards",
-    "invisible grills safety disclaimer",
+    "disclaimer",
+    "shrishti enterprises safety guidelines",
+    "safety nets load limits bangalore",
+    "invisible grills maintenance disclaimer",
   ],
 });
 
@@ -22,6 +23,8 @@ export default function DisclaimerPage() {
     { name: "Disclaimer", url: `${BUSINESS.url}/disclaimer` },
   ]);
 
+  const lastUpdated = "January 2025";
+
   return (
     <>
       <script
@@ -30,52 +33,75 @@ export default function DisclaimerPage() {
       />
       <Breadcrumb items={[{ name: "Disclaimer", href: "/disclaimer" }]} />
 
-      <section className="py-14 md:py-20 bg-gradient-to-br from-green-800 via-green-700 to-green-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <span className="inline-block bg-white/20 text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3 backdrop-blur-xs">
-            Safety Standards &amp; Advisory
+      {/* Hero */}
+      <section className="py-14 md:py-20 bg-[#1E2125] text-white relative overflow-hidden border-b border-gray-800">
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#AC7B25]/10 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
+          <span className="inline-block bg-[#AC7B25]/20 text-[#C59740] border border-[#AC7B25]/30 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3">
+            Safety Disclosures &amp; Advisory
           </span>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
-            Service &amp; Safety Disclaimer
+            Disclaimer &amp; Safety Guidelines
           </h1>
-          <p className="text-lg md:text-xl text-green-100 max-w-2xl mx-auto font-normal leading-relaxed">
-            Essential information regarding installation load thresholds, structural guidelines, and proper usage of safety barriers.
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-normal leading-relaxed">
+            Essential guidelines on product usage, load tolerances, ongoing inspection, and proper maintenance for your balcony installations.
           </p>
         </div>
       </section>
 
-      <section className="py-12 md:py-16 bg-gray-50/50">
+      {/* Main Content */}
+      <section className="py-12 md:py-16 bg-[#FAFAFA]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="bg-white p-6 sm:p-10 md:p-12 rounded-2xl shadow-sm border border-gray-200 prose prose-green md:prose-lg max-w-none text-gray-700">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2 mb-4 border-b border-gray-100 pb-3">
-              1. Protective Barrier Function
+          <div className="bg-white p-6 sm:p-10 md:p-12 rounded-2xl shadow-xs border border-gray-200 prose md:prose-lg max-w-none text-[#6C6C6E]">
+            {/* Last Updated Badge */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FAFAFA] text-[#AC7B25] border border-[#AC7B25]/20 text-xs sm:text-sm font-semibold mb-8">
+              <svg className="w-4 h-4 text-[#AC7B25]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>Effective &amp; Last Updated: {lastUpdated}</span>
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2125] mt-2 mb-4 border-b border-gray-100 pb-3">
+              1. General Safety Purpose &amp; Supervision
             </h2>
             <p className="mb-4 leading-relaxed">
-              Balcony safety nets and invisible grills installed by <strong>{BUSINESS.name}</strong> are engineered as auxiliary fall-arrest physical barriers to prevent accidental falls of children, pets, seniors, and dropped items.
+              Balcony safety nets and invisible grills installed by <strong>{BUSINESS.name}</strong> are engineered as secondary physical barrier systems designed to prevent accidental falls. They are not a substitute for active adult supervision of young children, vulnerable individuals, or household pets.
             </p>
 
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-10 mb-4 border-b border-gray-100 pb-3">
-              2. Structural Integrity &amp; Supervision
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2125] mt-10 mb-4 border-b border-gray-100 pb-3">
+              2. Load Capacities &amp; Structural Limitations
             </h2>
-            <p className="mb-4 leading-relaxed">
-              While our installations are certified to withstand rigorous impact loads (250+ kg/m² for nets and 350+ kg per SS316 cable), protective barriers should complement, but not replace, standard parental and adult supervision of young children and pets on elevated balconies.
-            </p>
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li>
+                <strong>Tension Tolerances:</strong> While our HDPE/Nylon netting and SS316 cables support significant impact loads (250–350+ kg/m²), they should never be subjected to intentional climbing, hanging, or anchoring heavy gym equipment.
+              </li>
+              <li>
+                <strong>Fire &amp; Heat Proximity:</strong> Keep grills, open flames, deep-frying setups, and hot lighting fixtures away from polymer safety netting.
+              </li>
+              <li>
+                <strong>Sharp Objects:</strong> Avoid dragging sharp metallic ladders, glass panes, or blades across tensioned cables or nylon filaments.
+              </li>
+            </ul>
 
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-10 mb-4 border-b border-gray-100 pb-3">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2125] mt-10 mb-4 border-b border-gray-100 pb-3">
               3. Maintenance &amp; Periodic Inspection
             </h2>
             <p className="mb-4 leading-relaxed">
-              We recommend periodic visual checks of anchor hooks and net tension. If you notice any accidental tears caused by sharp construction tools or external vandalism, contact our helpline immediately for warranty servicing.
+              We recommend inspecting your balcony netting and invisible grill anchor points every 6 to 12 months. If you observe any sagging, accidental cuts, or loose wall anchors, contact our team immediately for prompt servicing.
             </p>
 
-            <div className="bg-green-50 p-6 rounded-2xl border border-green-200 mt-8 not-prose">
-              <h3 className="text-lg font-bold text-green-900 mb-2">Need a free safety re-inspection?</h3>
-              <p className="text-sm text-green-800 mb-4">
-                Our technicians are available for quick inspections across all Bangalore localities.
+            <div className="bg-[#FAFAFA] p-6 rounded-2xl border border-gray-200 mt-8 not-prose">
+              <h3 className="text-lg font-bold text-[#1E2125] mb-2">Need a free safety re-inspection?</h3>
+              <p className="text-sm text-[#6C6C6E] mb-4">
+                Our technicians can inspect your existing safety nets or invisible grills anywhere in Bangalore to verify tension and anchor security.
               </p>
               <a
                 href={BUSINESS.phoneHref}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-green-700 text-white font-bold text-sm shadow-sm hover:bg-green-800 transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white font-bold text-sm shadow-xs transition-transform hover:scale-105"
+                style={{
+                  background: "linear-gradient(135deg, #AC7B25 0%, #C59740 100%)",
+                }}
               >
                 Call: {BUSINESS.phoneDisplay}
               </a>
@@ -84,7 +110,7 @@ export default function DisclaimerPage() {
         </div>
       </section>
 
-      <CTABanner title="Get in touch with our certified safety team" />
+      <CTABanner title="Ensure safety for your balcony with Bangalore's certified team" />
     </>
   );
 }
